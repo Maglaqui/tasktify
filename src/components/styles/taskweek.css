@@ -1,0 +1,126 @@
+.task-of-week{
+    height: auto;
+    width: 100%;
+}
+.tof-main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tof-container{
+    width: 100%;
+}
+.tof-contents{
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+.tof-contents section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tasker-list{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 0 0 5vw;
+}
+.tasker-list-header h1{
+    font-family: "Cocogoose";
+    font-size: 2.5vw;
+    font-weight: 100;
+}
+.tasker-list-header h1 span{
+    color: #3C9C3A;
+}
+.tasker-list-header p{
+    font-size: 1vw;
+}
+.tasker-list-contents ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+.tasker-list-contents ul li{
+    background: rgba(255, 255, 255, 0.07);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(13.5px);
+    -webkit-backdrop-filter: blur(13.5px);
+    height: auto;
+    width: 26vw;
+    box-sizing: border-box;
+    padding: 1vw;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+.tasker-image{
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .5vw;
+    position: relative;
+}
+.tasker-image img{
+    height: 10vw;
+}
+.tof-title-image{
+    text-align: center;
+}
+.tasker-infos{
+    padding: 0 1vw;
+}
+.tasker-head-info h1{
+    font-size: 1vw;
+    font-family: "Cocogoose";
+    font-weight: 100;
+}
+.tasker-head-info p{
+    font-family: "Arial";
+    font-size: .6vw;
+    display: flex;
+    align-items: center;
+    margin: 0 0 .2vw 0;
+}
+#star{
+    color: rgb(224, 224, 21);
+    margin: 0 .2vw 0 0;
+}
+#check{
+    color: green;
+    margin: 0 .2vw 0 0;
+}
+.tof-title-image h1{
+    font-size: 2vw;
+    color: #3C9C3A;
+    font-family: "Cocogoose";
+    font-weight: 100;
+}
+.tof-title-image img{
+    height: auto;
+    width: 100%;
+}
+.tasker-head-contents{
+    padding: .5vw;
+    border: .1vw solid black;
+    border-radius: .5vw;
+    margin: .7vw 0 0 0;
+}
+.skill-sets{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.tasker-head-contents p{
+    font-family: "Arial";
+    font-size: .7vw;
+}
+.tasker-head-contents h1{
+    font-size: .7vw;
+    color: #3C9C3A;
+    margin: .2vw 0;
+}
