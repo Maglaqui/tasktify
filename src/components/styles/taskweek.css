@@ -14,17 +14,20 @@
 }
 .tof-contents{
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 70% 30%;
+    box-sizing: border-box;
+    padding: 2vw 0 0 0;
 }
 .tof-contents section{
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 .tasker-list{
     width: 100%;
     box-sizing: border-box;
-    padding: 0 0 0 5vw;
+    padding: 0 5vw;
 }
 .tasker-list-header h1{
     font-family: "Cocogoose";
@@ -37,24 +40,47 @@
 .tasker-list-header p{
     font-size: 1vw;
 }
-.tasker-list-contents ul{
+.tasker-list-contents{
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    height: 27vw;
+}
+.list-of-taskers{
+    display: block;
+    position: absolute;
+    right: -120vw;
+    transition: 1s ease-in-out;
+}
+.list-of-taskers.second{
+    right: -60vw;
+}
+.list-of-taskers.first{
+    right: -60vw;
+}
+.list-of-taskers.third{
+    right: 0;
+}
+.list-of-taskers ul{
     list-style: none;
     display: flex;
-    justify-content: space-between;
     padding: 0;
+    width: 100%;
+    right: 10vw;
 }
-.tasker-list-contents ul li{
+.list-of-taskers ul li{
     background: rgba(255, 255, 255, 0.07);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(13.5px);
     -webkit-backdrop-filter: blur(13.5px);
     height: auto;
-    width: 26vw;
+    width: 28vw;
     box-sizing: border-box;
     padding: 1vw;
     display: grid;
     grid-template-columns: 30% 70%;
+    margin: 0 2vw 0 0;
 }
 .tasker-image{
     overflow: hidden;
@@ -123,4 +149,122 @@
     font-size: .7vw;
     color: #3C9C3A;
     margin: .2vw 0;
+}
+.tasker-btn-listed{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tasker-btn-listed li{
+    list-style: none;
+    font-size: .7vw;
+    margin: 1vw .2vw 0 .2vw;
+    border-radius: 50%;
+    font-family: "Arial";
+    height: 1.5vw;
+    width: 1.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.tasker-btn-listed li:hover{
+    color: #3C9C3A;
+    background: whitesmoke;
+    outline: .1vw solid #3C9C3A;
+}
+.firstlist{
+    color: #3C9C3A;
+    outline: .1vw solid #3C9C3A;
+    background: whitesmoke;
+}
+.firstlist.second{
+    color: whitesmoke;
+    background: #3C9C3A;
+}
+.firstlist.third{
+    color: whitesmoke;
+    background: #3C9C3A;
+}
+.secondlist{
+    color: whitesmoke;
+    background: #3C9C3A;
+}
+.secondlist.second{
+    color: #3C9C3A;
+    outline: .1vw solid #3C9C3A;
+    background: whitesmoke;
+}
+.secondlist.third{
+    color: whitesmoke;
+    background: #3C9C3A;
+}
+.thirdlist{
+    color: whitesmoke;
+    background: #3C9C3A;
+}
+.thirdlist.second{
+    color: whitesmoke;
+    background: #3C9C3A;
+}
+.thirdlist.third{
+    color: #3C9C3A;
+    outline: .1vw solid #3C9C3A;
+    background: whitesmoke;
+}
+.list-btns{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1vw;
+    box-sizing: border-box;
+}
+.list-btns button{
+    background: #3C9C3A;
+    border: none;
+    outline: 0;
+    height: 2vw;
+    font-size: .7vw;
+    width: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.list-btns button:hover{
+    color: #3C9C3A;
+    outline: .1vw solid #3C9C3A;
+    background: whitesmoke;
+}
+.preview-btn{
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s ease-in;
+}
+.preview-btn.second{
+    opacity: 1;
+    visibility: visible;
+}
+.preview-btn.third{
+    opacity: 1;
+    visibility: visible;
+}
+.next-btn{
+    opacity: 1;
+    visibility: visible;
+    transition: .3s ease-in;
+}
+.next-btn.second{
+    opacity: 1;
+    visibility: visible;
+}
+.next-btn.third{
+    opacity: 0;
+    visibility: hidden;
 }
