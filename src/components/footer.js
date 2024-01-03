@@ -16,11 +16,11 @@ const Footer = () => {
         <div className="main-footer">
             <div className="footer-container">
                 <div className="footer-header">
-                    <section>
-                      <h1>Are you ready to be productive?</h1>
-                      <p>Start your task now!</p>
-                    </section>
-                    <button>Start Now</button>
+                  <section>
+                    <h1>Are you ready to be productive?</h1>
+                    <p>Start your task now!</p>
+                  </section>
+                  <button>Start Now</button>
                 </div>
                 <div className="footer-content">
                   <section id='logo-tasktify'>

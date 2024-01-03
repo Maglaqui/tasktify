@@ -36,9 +36,10 @@
 .footer-header section p{
     font-size: 1vw;
     color: whitesmoke;
+    text-align: left;
 }
 .footer-header button{
-    padding: 1vw 2vw;
+    padding: 1vw 3vw;
     border: .2vw solid whitesmoke;
     background: none;
     outline: 0;
@@ -60,7 +61,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1vw 15vw;
+    padding: 1vw 12vw;
 }
 #logo-tasktify img{
     height: auto;
@@ -78,6 +79,7 @@
 .footer-linkings-content ul{
     text-align: center;
     padding: 0;
+    margin: 1vw 2vw;
 }
 .footer-linkings-content li{
     font-size: .7vw;

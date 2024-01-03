@@ -1,12 +1,27 @@
-import React from 'react'
+import React,{useState} from 'react'
 // css
 import '../styles/tasktify.css'
 // asset
 import deliver from '../assets/deliver-task.jpg'
+import Taskfinder from '../taskfinder'
 
 const Tasktify = () => {
+
+// usestate 
+const [create,setCreate] = useState(false)
+// task btn
+const openTask = () => {
+    setCreate(true)
+}
+const closeTask = () => {
+    setCreate(false)
+}
   return (
     <div className="tasktify-main">
+        <div className={`tasktifyCreate ${create}`}>
+            <Taskfinder/>
+            <div className="autoClosecreate" onClick={closeTask}></div>
+        </div>
         <div className="tasktify-container">
             <div className="tasktify-content">
                 <section>
@@ -24,7 +39,7 @@ const Tasktify = () => {
                             </div>
                             <div className="tasktify-take-task">
                                 <p>Tasker Side</p>
-                                <button>Take Task</button>
+                                <button onClick={openTask}>Take Task</button>
                             </div>
                         </div>
                     </div>
