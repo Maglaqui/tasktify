@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 // css
 import './styles/footer.css'
 // assets
@@ -9,10 +9,27 @@ import {
   FaTwitterSquare,
   FaInstagramSquare  
 } from "react-icons/fa";
+// js file
+import CreateAcc from './pages/create-acc';
 
 const Footer = () => {
+
+// usestate
+const [start,setStart] = useState(false)
+// open create acc
+const startNow = () => {
+  setStart(true)
+}
+const closestartNow = () => {
+  setStart(false)
+}
+
   return (
     <div className="footer">
+      <div className={`start-now ${start}`}>
+        <CreateAcc/>
+        <div className="autoClose" onClick={closestartNow}></div>
+      </div>
         <div className="main-footer">
             <div className="footer-container">
                 <div className="footer-header">
@@ -20,7 +37,7 @@ const Footer = () => {
                     <h1>Are you ready to be productive?</h1>
                     <p>Start your task now!</p>
                   </section>
-                  <button>Start Now</button>
+                  <button onClick={startNow}>Start Now</button>
                 </div>
                 <div className="footer-content">
                   <section id='logo-tasktify'>
