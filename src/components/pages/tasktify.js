@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 // css
 import '../styles/tasktify.css'
 // asset
@@ -9,6 +9,7 @@ const Tasktify = () => {
 
 // usestate 
 const [create,setCreate] = useState(false)
+
 // task btn
 const openTask = () => {
     setCreate(true)

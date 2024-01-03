@@ -74,7 +74,9 @@
     background: #3C9C3A;
     color: whitesmoke;
     width: 5vw;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 1vw;
     cursor: pointer;
     transition: .3s ease;
@@ -104,7 +106,8 @@
     justify-content: space-between;
 }
 .taskFiltered{
-    height: 25vw;
+    margin: .5vw 0 0 0;
+    height: 32.5vw;
     overflow-y: scroll;
     padding: 0 1vw;
     border-radius: 1vw;
@@ -221,6 +224,22 @@
     border: .1vw solid #3C9C3A;
     border-radius: 1vw;
 }
+.taksFinder-profile button{
+    margin: 1vw 0 0 0;
+    width: 100%;
+    padding: .5vw;
+    border-radius: .5vw;
+    font-size: .7vw;
+    color: whitesmoke;
+    background: #3C9C3A;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    transition: .3s ease;
+}
+.taksFinder-profile button:hover{
+    background: #296e28;
+}
 .profile-tskfinder{
     display: flex;
     box-shadow: 0 0 .3vw gray;
@@ -257,4 +276,73 @@
     font-size: .6vw;
     color: gray;
     font-weight: 100;
+}
+.profile-skill h2{
+    font-size: 1vw;
+    margin: 0;
+    color: #3C9C3A;
+}
+.profile-skill section{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+.skillset{
+    padding: 0 2vw;
+}
+.profile-skill section ul{
+    padding: 0;
+}
+.profile-skill section ul h1{
+    padding: 0;
+    font-size: .6vw;
+    color: gray;
+}
+.profile-skill section ul li{
+    list-style: none;
+    font-size: .8vw;
+    font-weight: 700;
+}
+.stars{
+    color: #3C9C3A;
+}
+.prf-descrip{
+    padding: 0;
+}
+.prf-descrip p{
+    width: 100%;
+    font-size: .7vw;
+    border: .1vw solid #3C9C3A;
+    padding: .5vw;
+    border-radius: .5vw;
+    margin: .5vw 0 0 0;
+}
+.prf-reviews{
+    display: block;
+    margin: .5vw 0 0 0;
+}
+.prf-reviews p{
+    font-size: .7vw;
+    color: gray;
+    font-family: "Arial";
+}
+#starIcon{
+    color: rgb(219, 219, 17);
+    margin: 0 .2vw 0 0;
+}
+#checkIcon{
+    color: #3C9C3A;
+    margin: 0 .2vw 0 0;
+}
+.prf-contact{
+    margin: .5vw 0 0 0;
+}
+.prf-contact p{
+    font-family: "Arial";
+}
+#locationIcon{
+    color: rgb(218, 45, 45);
+}
+#phoneIcon{
+    color: #296e28;
 }
