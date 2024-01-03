@@ -3,6 +3,12 @@ import React from 'react'
 import './styles/footer.css'
 // assets
 import tasktifylogo from './assets/tasktifylogo.png'
+// icon
+import { 
+  FaFacebookSquare,
+  FaTwitterSquare,
+  FaInstagramSquare  
+} from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -21,7 +27,55 @@ const Footer = () => {
                     <img src={tasktifylogo} alt="" />
                     <h1>Tasktify</h1>
                   </section>
+                  <section>
+                    <div className="footer-linkings-content">
+                      <ul>
+                        <h1>Contacts</h1>
+                        <hr />
+                        <li>Contact No./email here</li>
+                        <li>Contact No./email here</li>
+                        <li>Contact No./email here</li>
+                        <li>Contact No./email here</li>
+                      </ul>
+                      <ul>
+                        <h1>Tasklist</h1>
+                        <hr />
+                        <li>Gardener</li>
+                        <li>Delivery</li>
+                        <li>Home Decor</li>
+                        <li>Cook</li>
+                        <button>See more...</button>
+                      </ul>
+                      <ul>
+                        <h1>Locations</h1>
+                        <hr />
+                        <li>Manila</li>
+                        <li>Pangasinan</li>
+                        <li>Marikina</li>
+                        <li>Pasay</li>
+                        <button>See more...</button>
+                      </ul>
+                      <ul>
+                        <h1>About Us</h1>
+                        <hr />
+                        <li>Terms and Conditions</li>
+                        <li>Legalities and Restrictions</li>
+                        <li>What is Tasktify?</li>
+                        <li>Tasktify Team</li>
+                        <button>See more...</button>
+                      </ul>
+                    </div>
+                  </section>
+                  <section id="socialLinks">
+                    <h1>Follow us in:</h1>
+                    <div className="social-links">
+                      <a href=""><FaFacebookSquare /></a>
+                      <a href=""><FaTwitterSquare  /></a>
+                      <a href=""><FaInstagramSquare   /></a>
+                    </div>
+                  </section>
                 </div>
+                <p>Tasktify • All Rights Reserve 2023</p>
             </div>
         </div>
     </div>
