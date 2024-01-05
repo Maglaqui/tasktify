@@ -1,8 +1,6 @@
 import React,{useState} from 'react'
 // css
 import '../styles/createTask.css'
-// asset
-import taketask from '../assets/taketask.jpg'
 // icons
 import { MdArrowBackIos } from "react-icons/md";
 import { MdArrowForwardIos } from "react-icons/md";
