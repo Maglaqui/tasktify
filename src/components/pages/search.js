@@ -16,7 +16,7 @@ const Search = () => {
             <section className='bannerLeft'>
               <div className="add-info">
                 <h1>How do you like your garden?</h1>
-                <p>How do you like your garden? Tasktify helps you to achieve your daily  goals. It assist you for rhe things that requires man power</p>
+                <p>How do you like your garden? Tasktify helps you to achieve your daily  goals. It assist you for the things that requires man power</p>
               </div>
             </section>
             <section className='bannerRight'>
